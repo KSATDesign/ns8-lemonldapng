@@ -3,5 +3,5 @@ WORKDIR /app
 ENV NODE_OPTIONS=--openssl-legacy-provider
 EXPOSE 8080
 ENTRYPOINT ["./container-entrypoint.sh"]
-COPY nethserver.png /usr/share/lemonldap-ng/portal/htdocs/static/common/logos/nethserver.png
-COPY nethbackground.png /usr/share/lemonldap-ng/portal/htdocs/static/common/backgrounds/nethbackground.png
+COPY nethserver.png ./llng/apps/nethserver.png
+COPY nethbackground.png ./llng/template/nethbackground.png
