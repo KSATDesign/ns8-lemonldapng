@@ -3,5 +3,5 @@ WORKDIR /app
 ENV NODE_OPTIONS=--openssl-legacy-provider
 EXPOSE 8080
 ENTRYPOINT ["./container-entrypoint.sh"]
-COPY nethserver.png ./llng/apps/nethserver.png
-COPY nethbackground.png ./llng/template/nethbackground.png
+COPY nethserver.png ./llng/theme/nethserver.png
+COPY nethbackground.png ./llng/theme/nethbackground.png
