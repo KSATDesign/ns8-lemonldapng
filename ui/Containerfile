@@ -2,4 +2,7 @@ FROM node:18-slim
 WORKDIR /app
 ENV NODE_OPTIONS=--openssl-legacy-provider
 EXPOSE 8080
+COPY nethserver.png /usr/share/lemonldap-ng/portal/htdocs/static/CustomTheme/nethserver.png
+COPY nethbackground.png /usr/share/lemonldap-ng/portal/htdocs/static/common/backgrounds/nethbackground.png
+COPY custom.css /usr/share/lemonldap-ng/portal/htdocs/static/CustomTheme/custom.css
 ENTRYPOINT ["./container-entrypoint.sh"]
